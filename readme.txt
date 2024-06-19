@@ -37,3 +37,38 @@ program of bubble sort.
 
 we assigned value to array. and print each value before sort using for loop. 
 then algorithm of bubble sort. 
+
+
+lec 03. JS Operators.
++, -, *, /, % operators. 
+
+    var num1=40;
+        var num2=10;
+        document.write(num1 + num2);
+        document.write("<br/>");
+        document.write(num1 - num2);
+        document.write("<br/>");
+        document.write(num1 * num2);
+        document.write("<br/>");
+        document.write(num1 / num2);
+        document.write("<br/>");
+        document.write(num1 % num2);
+        document.write("<br/>");
+
+num1+=5; this means num1=num1+5; so num1 is 40. it will become 40+5= 45. 
+var result= (num1 +num2) *5;
+document.write(result);
+
+++ for increment and -- for decrement. pre increment and post increment operators. 
+== for comparison operator, if (num1==num2). 
+!= for not equal to. 
+> greater than. < less than. 
+>=. <=.
+
+ternary operator. 
+var id= prompt("enter user id", "user id");
+var pas= prompt ("enter password", "password");
+
+var message= (id=="John" && pas=="1234") ? "welcome" : "invalid user";
+alert(message);
+//This will show welcome if id is john and pas is 1234. else it will say invalid user. 
