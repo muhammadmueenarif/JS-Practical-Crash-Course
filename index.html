@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Practical Crash Course</title>
 
     <script language="javascript" type="text/javascript">
-        function Load() {
-            document.images["img1"].src= "yellow.png";
-        }
+          
+          var tutorial ={ 
+       "topic":"js",
+       "trainer": "john",
+       "mode": "beginner" 
+    };
 
-        function MouseOver() {
-            document.images["img1"].src= "blackpink.png";
-        }
+    document.write("topic: "+ tutorial.topic);
+    document.write("<br/> <br/>");
+    document.write("trainer: "+ tutorial.trainer);
+    document.write("<br/> <br/>");
+    document.write("mode: "+ tutorial.mode);
+    document.write("<br/> <br/>");
 
-        function MouseOut() {
-            document.images["img1"].src = "blackyellow.png";
-        }
-
+    var text="";
+    var x;
+    for (x in tutorial) {
+        text+= tutorial[x] + " , ";
+    }
+    document.write(text);
+    
     </script>
 
 </head>
-<body onload="Load()">
-    <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()">
-</body>
-</html>
 
+<body>
+  
+</body>
+
+</html>

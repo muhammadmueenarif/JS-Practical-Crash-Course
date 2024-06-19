@@ -137,3 +137,24 @@ mouse over, mouseout, load.
 
     </script>
 
+
+Lec 06 is animation. Leaving it as not necessary yet.
+
+  <script language="javascript" type="text/javascript">
+          
+          var tutorial ={ 
+       "topic":"js",
+       "trainer": "john",
+       "mode": "beginner" 
+    };
+
+    document.write("topic: "+ tutorial.topic);
+    document.write("<br/> <br/>");
+    document.write("trainer: "+ tutorial.trainer);
+    document.write("<br/> <br/>");
+    document.write("mode: "+ tutorial.mode);
+    document.write("<br/> <br/>");
+
+    </script>
+
+now we can repeat each value using for in loop. 
