@@ -72,3 +72,68 @@ var pas= prompt ("enter password", "password");
 var message= (id=="John" && pas=="1234") ? "welcome" : "invalid user";
 alert(message);
 //This will show welcome if id is john and pas is 1234. else it will say invalid user. 
+
+
+Lec 04. Functions 
+ 
+ function sayHello() {
+        document.write("Hello there");
+    }
+
+    <body>
+        <p>Click the following button</p>
+        <form>
+            <input type="button" onclick="sayHello()" value="sayHello">
+        </form>
+    </body>
+
+// now we will pass parameters in function.
+
+ <script language="javascript" type="text/javascript">
+    function sayHello(name, age) {
+        document.write(name + " is" + age +" years old");
+    }
+    </script>
+
+
+  <p>Click the following button</p>
+    <form>
+        <input name="t1" placeholder="Enter Name"> <br>
+        <input name="t2" placeholder="Enter Age"> <br>
+        <input type="button" onclick="sayHello(t1.value, t2.value)" value="sayHello">
+    </form>
+
+make sure that the parameters are passed and accessed in the same order otherwise error occurs. 
+
+// we can make a condition that function will not execute when no value is passed. so that is
+we will simply use the following code. 
+  <script language="javascript" type="text/javascript">
+    function sayHello(name, age) {
+        if(name =="" || age=="")
+        return;
+        document.write(name + " is" + age +" years old");
+    }
+    </script>
+
+
+Lec 05. JS Events 
+mouse over, mouseout, load. 
+<body onload="Load()">
+
+    <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()">
+</body>
+
+   function Load() {
+            document.images["img1"].src= "yellow.png";
+        }
+
+        function MouseOver() {
+            document.images["img1"].src= "blackpink.png";
+        }
+
+        function MouseOut() {
+            document.images["img1"].src = "blackyellow.png";
+        }
+
+    </script>
+
